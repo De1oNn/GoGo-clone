@@ -154,6 +154,7 @@ p {
 #title-pic {
     height: 385px;
     width: 542.5px;
+    object-fit: cover;
 }
 .title-down {
     display: flex;
@@ -165,7 +166,7 @@ p {
 .down-pic {
     height: 175px;
     width: 264px;
-
+    object-fit: cover;
 }
 .down-title-div {
     height: 261px;
@@ -271,7 +272,7 @@ p {
 .story-pic {
     height: 235px;
     width: 170.8px;
-
+    object-fit: cover;
 }
 .story-down {
     display: flex;
@@ -379,6 +380,7 @@ main {
     height: 150px;
     width: 210px;
     border-radius: 5px;
+    object-fit: cover;
 }
 .container-bottom {
     width: 690px;
@@ -452,6 +454,7 @@ main {
     height: 170px;
     width: 290px;
     border-radius: 5px;
+    object-fit: cover;
 }
 #fire-pic {
     height: 26px;
@@ -545,11 +548,13 @@ main {
     height: 500px;
     width: 542.5px;
     border-radius: 8px;
+    object-fit: cover;
 }
 .interview-pic-small {
     height: 243px;
     width: 263.75px;
     border-radius: 8px;
+    object-fit: cover;
 }
 .interview-pics {
     display: flex;
@@ -598,6 +603,7 @@ main {
     height: 230px;
     width: 263.75px;
     border-radius: 8px;
+    object-fit: cover;
 }
 .style-par {
     font-size: 16px;
@@ -754,6 +760,7 @@ main {
 .black-pics {
     height: 170px;
     width: 263.75px;
+    object-fit: cover;
 }
 .black-middle-date {
     font-size: 12px;
@@ -778,14 +785,89 @@ main {
     justify-content: space-between;
 }
 footer {
-    height: 197px;
+    height: 247px;
     width: 1989px;
-    padding: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.footer-last {
-    height: 147px;
+.footer-upper {
+    height: 65px;
     width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+#footer-pics {
+    height: 20px;
+    width: 15px;
+}
+#footer-logo {
+    height: 39px;
+    width: 120px;
+}
+.footer-logo-pra {
+    display: flex;
+    gap: 25px;
+}
+.footer-logo {
+    display: flex;
+    gap: 15px;
+}
+#footer-title {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-logo-pra {
+    display: flex;
+    height: 22.25px;
+    width: 949px;
+    justify-content: end;
+}
+.footer-down-pra {
+    display: flex;
+    gap: 15px;
+    height: 22.25px;
+    width: 949px;
+    justify-content: end;
+}
+.footer-whole {
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    width: 949px;
+    justify-content: space-between;
+}
+.logo-footer{
+    height: 65px;
+    width: 151px;
+}
+#footer-line {
+    height: 1px;
+    width: 1100px;  
+    background-color: lightgray;
+    margin: 30px 0px;
+}
+.footer-icons {
+    height: 20px;
+    width: 20px;
+}
+.footer-down {
+    display: flex;
+    justify-content: space-between;
+    height: 21px;
+    width: 1100px;
+}
+#footer-2007 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.footer-icon {
+    gap: 20px;
+    height: 21px;
+    width: 530px;
+    display: flex;
+    justify-content: end;
 }
