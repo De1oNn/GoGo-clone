@@ -6,14 +6,15 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: oldlace;
+    background-color: rgb(246, 246, 246);
+    width: 100%;
 }
 .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 2300px;
+
 }
 .header-title {
     display: flex;
@@ -47,6 +48,7 @@ header{
     justify-content: space-around;
     flex-direction: row;
     border-radius: 5px;
+    z-index: 2;
 }
 .news:hover + .text-medee {
     display: flex;
@@ -55,11 +57,13 @@ header{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 .bulan {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 .watch {
     font-size: 16px;
@@ -70,6 +74,7 @@ header{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 #English {
     font-size: 16px;
@@ -115,6 +120,7 @@ header{
 }
 .watch {
     list-style: none;
+    cursor: pointer;
 }
 .titles li::before {
     content: "\2022";
@@ -138,6 +144,7 @@ header{
     top: 65px;
     left: 925px;
     border-radius: 5px;
+    z-index: 2;
 }
 .watch:hover + .text-medee20 {
     display: flex;
@@ -175,6 +182,7 @@ header{
     width: 20px;
     -webkit-transform: scaleX(1);
     padding: 0;
+    cursor: pointer;
 }
 p {
     font-size: 16px;
@@ -209,12 +217,13 @@ p {
 }
 #dollar {
     color: #2adb00;
-    font-size: 18px;
+    font-size: 19px;
+    font-weight: bold;
 }
 #line {
     width: 2px;
     height: 18px;
-    background-color: gray;
+    background-color: rgb(213, 212, 212);
     margin: 0px 7px;
 }
 
@@ -258,51 +267,13 @@ p {
     width: 100%;
     object-fit: cover;
     transition: 0.5s ease;
+    border-radius: 5px;
 }
 .title-pic {
     height: 385px;
     width: 542.5px;
-    position: relative;
     overflow: hidden;
     cursor: pointer;
-}
-.read {
-    position: absolute;
-    font-size: 1.2rem;
-    top: 0;
-    left: 0;
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.4;
-    visibility: hidden;
-}
-.title-pic:hover .read {
-    visibility: visible;
-}
-.title-pic:hover .h3 {
-    opacity: 1;
-}
-.title-pic:hover #title-pic {
-    transform: scale(1.1);
-}
-.h3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    opacity: 0;
 }
 .title-down {
     display: flex;
@@ -316,7 +287,6 @@ p {
     height: 175px;
     width: 263px;
     object-fit: cover;
-    position: relative;
     transition: 0.5s ease;
 }
 .down-title-div {
@@ -327,41 +297,6 @@ p {
 .down-title-div1 {
     height: 283px;
     width: 263.75px;
-    position: relative; 
-    overflow: hidden; 
-}
-.down-title-div1:hover .h3 {
-    opacity: 1;
-}
-.read1 {
-    position: absolute;
-    font-size: 1.2rem;
-    top: 0;
-    left: 0;
-    background-color: black;
-    height: 175px;
-    width: 263px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.4;
-    visibility: hidden;
-}
-.h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 175px;
-    width: 263px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    opacity: 0;
-    visibility: hidden;
 }
 .unshih {
     height: 175px;
@@ -375,16 +310,6 @@ p {
     justify-content: center;
     align-items: center;
     opacity: 0.4;
-}
-.down-title-div1:hover .read1 {
-    visibility: visible;
-}
-.down-title-div1:hover .h1 {
-    visibility: visible;
-    opacity: 1;
-}
-.down-title-div1:hover .down-pic {
-    transform: scale(1.1);
 }
 .down-title-div2 {
     height: 261px;
@@ -401,6 +326,7 @@ p {
 #intro-pic-down {
     height: 270px;
     width: 263px;
+    border-radius: 5px;
 }
 #Dream {
     font-size: 26px;
@@ -453,6 +379,7 @@ p {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
+    margin-left: 10px;
 }
 .top-number {
     font-size: 18px;
@@ -462,7 +389,7 @@ p {
 #zero {
     height: 36px;
     width: 56.25px;
-    background-color: #f0efef;
+    background-color: rgb(235, 235, 235);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -470,6 +397,15 @@ p {
     gap: 3px;
     margin-bottom: 10px;
     margin-left: 20px;
+    transition: 0.6s ease;
+}
+#zero:hover {
+    background-color: white;
+    height: 36px;
+    width: 70px;
+}
+#zero:hover #share-top {
+    rotate: 45deg;
 }
 #zero-5 {
     margin-left: 5px;
@@ -477,9 +413,10 @@ p {
 #share-top {
     height: 16px;
     width: 16px;
+    transition: 0.6s ease;
 }
 #Buisness {
-    background-color: orange;
+    background-color: rgb(231, 100, 44);
     height: 30px;
     width: 73px;
     font-size: 12px;
@@ -490,6 +427,13 @@ p {
     border-radius: 15px;
     color: white;
     font-weight: 600;
+    transition: 0.3s ease;
+
+    margin-top: 40px;
+}
+#buisness:hover {
+    height: 30px;
+    width: 85px;
 }
 .header-pra{
     width: 1180px;
@@ -504,7 +448,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgb(241, 236, 236);
+    background-color: rgb(241, 241, 241);
     border-radius: 10px;
 }
 .GoGo-story {
@@ -522,11 +466,57 @@ p {
     width: 170.8px;
     object-fit: cover;
     border-radius: 5px;
+    transition: 0.2s ease;
 }
+
 .storys {
     position: relative;
     height: 235px;
     width: 170.8px;
+    overflow: hidden;
+    border-radius: 5px  ;
+}
+.story-par {
+    position: absolute;
+    height: 33px;
+    width: 150px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    top: 170px;
+    left: 10px;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    display: block;
+    unicode-bidi: isolate;
+}
+.storys:hover .story-par {
+    height: 100px;
+    transition: 0.2s ease-in-out;
+    top: 145px;
+    -webkit-transition: all .2s ease-in-out;
+}
+.story-eye {
+    position: absolute;
+    height: 22px;
+    width: 150px;
+    top: 210;
+    left: 10px;
+    visibility: visible;
+    display: flex;
+}
+#story-eye {
+    height: 14px;
+    width: 15px;
+}
+#story-p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
 }
 #little-logo {
     position: absolute;
@@ -633,6 +623,24 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 3px;
+}
+.date {
+    transition: 0.5s ease;
+}
+.date:hover .line{
+    background-color: #407ce8;
+}
+.date:hover .unuudur-date {
+    color: #407ce8;
+}
+.date:hover {
+    transform: scale(1.1);
+}
+#dot:hover {
+    background-color: #407ce8;
+}
+.dot:hover #dot {
+    color: white;
 }
 .container-left {
     display: flex;
@@ -756,16 +764,22 @@ main {
 }
 .tsaash-uzeh {
     background-color: #f8f8f8;
-    height: 66px;
-    width: 690px;
+    height: 65px;
+    width: 650px;
     border-radius: 5px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px;
-    border-color: gray;
+    border: 1px solid rgb(227, 227, 227);
+    padding: 20px;
+    cursor: pointer;
+}
+.tsaash-uzeh:hover {
+    color: #00B0F4;
+    background-color: white;
+    transition: 0.3s ease;
 }
 #uzeh {
     height: 21px;
@@ -793,7 +807,7 @@ main {
     font-weight: bold;
 }
 .left-middle {
-    height: 1150px;
+    height: 1250px;
     width: 290px;
     display: flex;
     flex-direction: column;
@@ -804,7 +818,6 @@ main {
 .right-middle {
     display: flex;
     flex-direction: column;
-    height: 225px;
     width: 290px;
 }
 #right-middle-pic {
@@ -880,6 +893,16 @@ main {
     width: 340px;
     margin-left: 30px;
 }
+.trend-1:hover {
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+.trend-1:hover .trend-title {
+    opacity: 0.6;
+}
+.trend-1:hover #trend-title-1 {
+    opacity: 0.6;
+}
 .trend-title {
     height: 66px;
     width: 230px;
@@ -905,25 +928,125 @@ main {
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 }
 #interview-pic-big {
     height: 500px;
     width: 542.5px;
-    border-radius: 8px;
+    border-radius: 5px;
     object-fit: cover;
     transition: 0.5s ease;
 }
 .interview-pic-small {
     height: 243px;
     width: 263.75px;
-    border-radius: 8px;
+    border-radius: 5px;
     object-fit: cover;
     transition: 0.5s ease;
+}
+.interview-small-inside {
+    position: absolute;
+    height: 55px;
+    overflow: hidden;
+    width: 200px;
+    top: 120;
+    left: 0;
+    padding: 20px 20px 25px;
+    border-radius: 5px;
+}
+
+.interview-down:hover .interview-p{
+    opacity: 0.8;
+}
+.over-hidden:hover .small-p {
+    opacity: 0.8;
+}
+.over-hidden:hover .interview-small-inside {
+    top: 100px;
+    height: 70px;
+    transition: 0.3s ease;
+}
+.interview-small-inside:hover {
+    top: 100px;
+    height: 70px;
+    transition: 0.3s ease;
+}
+.small-par {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 55px;
+    width: 222px;
+    color: white;
+    font-weight: 400;
+}
+.small-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #407ce8;
+    height: 26px;
+    width: 78px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 .over-hidden{
     width: 100%;
     height: 243px;
     overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.interview-inside {
+    top: 310px;
+    left: 0;
+    position: absolute;
+    height: 130px;
+    width: 482.5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#interview-line {
+    height: 1;
+    width: 482.5px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.more {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 20px;
+    width: 482.5px;
+    color: white;
+    font-weight: 600;
+}
+.interview-par {
+    height: 56px;
+    width: 482.5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 400;
+}
+.interview-p {
+    height: 26px;
+    width: 104px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #407CE8;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
 .interview-pic-small:hover {
     transform: scale(1.1);
@@ -982,6 +1105,7 @@ main {
     border-radius: 8px;
     object-fit: cover;
     transition: 0.5s ease;
+    border-radius: 5px;
 }
 .style-par {
     font-size: 16px;
@@ -1026,6 +1150,7 @@ main {
     height: 170px;
     width: 263.75px;
     border-radius: 5px;
+    transition: 0.5s ease;
 }
 .tech-upper {
     display: flex;
@@ -1075,6 +1200,8 @@ main {
 .komik-pics {
     height: 200px;
     width: 542.5px;
+    transition: 0.5s ease;
+    object-fit: cover;
 }
 .komik-dowm {
     display: flex;
@@ -1135,6 +1262,7 @@ main {
     height: 262px;
     width: 263.75px;
     padding: 0px 0px 50px;
+    border-radius: 5px;
 }
 .black-pics {
     height: 170px;
@@ -1195,10 +1323,16 @@ footer {
 .footer-logo {
     display: flex;
     gap: 15px;
+    border-radius: 5px;
 }
 #footer-title {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#footer-title:hover {
+    color: #407CE8;
+    transition: 0.2s ease;
 }
 .footer-logo-pra {
     display: flex;
@@ -1233,6 +1367,11 @@ footer {
 .footer-icons {
     height: 20px;
     width: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.footer-icons:hover {
+    opacity: 1;
 }
 .footer-down {
     display: flex;
@@ -1268,6 +1407,7 @@ footer {
     height: 170px;
     width: 263.75px;
     overflow: hidden;
+    border-radius: 5px;
 }
 .hover-read {
     color: white;
@@ -1391,6 +1531,7 @@ footer {
     height: 230px;
     width: 263.75px;
     overflow: hidden;
+    border-radius: 5px;
 }
 .style-black {
     position: absolute;
@@ -1420,10 +1561,192 @@ footer {
 }
 .style-hover:hover .style-black {
     visibility: visible;
+    border-radius: 5px;
 }
 .style-hover:hover .style-read {
     visibility: visible;
 }
 .style-hover:hover .style-pics {
+    transform: scale(1.1);
+}
+.tech-hover {
+    position: relative;
+    height: 170px;
+    width: 263.75px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.tech-read {
+    position: absolute;
+    height: 170px;
+    width: 263.75px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+}
+.tech-black {
+    position: absolute;
+    height: 170px;
+    width: 263.75px;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0.4;
+}
+.tech-hover:hover .tech-black{
+    visibility: visible;
+}
+.tech-hover:hover .tech-read {
+    visibility: visible;
+}
+.tech-hover:hover .tech-pics {
+    transform: scale(1.1);
+}
+.komik-hover {
+    position: relative;
+    height: 200px;
+    width: 542.5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.komik-read {
+    position: absolute;
+    height: 200px;
+    width: 542.5px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+}
+.komik-black {
+    position: absolute;
+    height: 200px;
+    width: 542.5px;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0.4;
+}
+.komik-hover:hover .komik-read{
+    visibility: visible;
+}
+.komik-hover:hover .komik-black {
+    visibility: visible;
+}
+.komik-hover:hover .komik-pics {
+    transform: scale(1.1);
+}
+.hover-down-pic {
+    position: relative;
+    height: 175px;
+    width: 263px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.read1 {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 175px;
+    width: 263px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 175px;
+    width: 263px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+}
+.hover-down-pic:hover .read1 {
+    visibility: visible;
+    border-radius: 5px;
+}
+.hover-down-pic:hover .h1{
+    visibility: visible;
+}
+.hover-down-pic:hover .down-pic {
+    transform: scale(1.1);
+}
+.title-pic {
+    position: relative;
+    height: 385px;
+    width: 542.5px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.read {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    visibility: hidden;
+}
+.h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+}
+.title-pic:hover .read{
+    visibility: visible;
+}
+.title-pic:hover .h3 {
+    visibility: visible;
+}
+.title-pic:hover #title-pic{
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+.story-pic:hover {
     transform: scale(1.1);
 }
