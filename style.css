@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header{
     display: flex;
     flex-direction: row;
@@ -9,6 +10,7 @@ header{
     background-color: rgb(246, 246, 246);
     width: 100%;
 }
+
 .title {
     display: flex;
     flex-direction: column;
@@ -16,6 +18,7 @@ header{
     align-items: center;
 
 }
+
 .header-title {
     display: flex;
     flex-direction: row;
