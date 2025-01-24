@@ -484,15 +484,9 @@ p {
     height: 235px;
     width: 170.8px;
     overflow: hidden;
-    border-radius: 5px  ;
+    border-radius: 5px;
 }
-.storys1 {
-    position: relative;
-    height: 235px;
-    width: 170.8px;
-    overflow: hidden;
-    border-radius: 5px  ;
-}
+
 .story-par {
     position: absolute;
     height: 33px;
@@ -509,6 +503,7 @@ p {
     display: block;
     unicode-bidi: isolate;
 }
+
 .storys:hover .story-par {
     height: 100px;
     transition: 0.2s ease-in-out;
@@ -1777,6 +1772,9 @@ footer {
 .story-pic:hover {
     transform: scale(1.1);
 }
+.story-pic1:hover {
+    transform: scale(1.1);
+}
 
 @media only screen and (max-width: 1000px) {
     .title-upper {
@@ -1807,9 +1805,6 @@ footer {
         margin: 0;
         padding: 0px 30px ;
 
-    }
-    .storys1 {
-        display: none;
     }
     .storys{
         width: 287px;
